@@ -1,0 +1,12 @@
+{
+    "prod": {
+      "project_name": "zappa_flask_app",
+      "aws_region": "ap-southeast-2",
+      "s3_bucket": "flask.lambda.terryxu",
+      "app_function": "api.app",
+      "http_methods": ["GET"],
+      "parameter_depth": 1,
+      "memory_size": 512,
+      "use_precompiled_packages": true
+    }
+}
