@@ -7,6 +7,7 @@
       "http_methods": ["GET"],
       "parameter_depth": 1,
       "memory_size": 512,
-      "use_precompiled_packages": true
+      "use_precompiled_packages": true,
+      "cors": true
     }
 }

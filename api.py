@@ -8,9 +8,8 @@ from flask import request, url_for
 from flask_api import FlaskAPI, status, exceptions
 from flask_cors import CORS, cross_origin
 
-
 app = FlaskAPI(__name__)
-CORS(app)
+CORS(app, resources={ r"/api/*": {"origins": "*"}}, supports_credentials=True)
 
 @app.route("/api/Token", methods=["GET"])
 def token():
